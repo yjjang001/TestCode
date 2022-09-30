@@ -19,3 +19,21 @@ now = now.strftime('%d %#m월 %Y')
 # //android.view.View[@content-desc="16 9월 2022"]
 
 print(now)
+
+# 날짜 테스트 2
+day = (currentTime() + datetime.timedelta(days=10)).strftime('%#d')
+print(day)
+
+
+# 날짜 테스트 3
+currentmonth = currentTime().strftime('%m')
+month = (currentTime() + datetime.timedelta(days=3)).strftime('%m')
+print(currentmonth)
+print(month)
+if month > currentmonth :
+    print('!')
+
+# 날짜 테스트4
+
+date = currentTime().strftime('%Y.%m.%d')
+print(date)
